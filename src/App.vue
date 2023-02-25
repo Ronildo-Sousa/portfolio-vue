@@ -1,6 +1,5 @@
 <script setup>
-import Card from './components/Card.vue'
-import ProjectRow from './components/ProjectRow.vue'
+import List from './components/List.vue'
 const projects = [
   {
     "title": 'Short Url',
@@ -54,7 +53,7 @@ const projects = [
 </script>
 
 <template>
-  <div class="text-white bg-black">
-    <ProjectRow :projects="projects" />
+  <div class="text-white bg-gradient-to-r from-black to-gray-600">
+    <List :projects="projects" />
   </div>
 </template>
