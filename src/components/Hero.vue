@@ -12,8 +12,10 @@ const props = defineProps({
 </script>
 
 <template>
-  <div :id="id" class="flex items-center justify-center py-10">
-    <div class="flex flex-col items-center max-w-2xl text-center md:items-start md:text-start max-w-2x">
+  <div :id="id" class="flex items-center justify-center py-10 mt-16">
+    <div
+      class="flex flex-col items-center max-w-2xl text-center md:items-start md:text-start max-w-2x"
+    >
       <h1
         class="text-3xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-blue-400 sm:text-5xl"
       >

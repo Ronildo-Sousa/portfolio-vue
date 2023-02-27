@@ -1,82 +1,24 @@
 <script setup>
-import { ref } from "vue";
 import Card from "./Card.vue";
-
-const ScrollX = ref(0);
 
 const props = defineProps({
   projects: Array,
   title: String,
   id: String,
 });
-
-function handleLeft() {
-  let x = ScrollX.value + Math.round(window.innerWidth / 2);
-  if (x > 0) {
-    x = 0;
-  }
-  ScrollX.value = x;
-}
-
-function handleRight() {
-  let x = ScrollX.value - Math.round(window.innerWidth / 2);
-  let listW = props.projects.length * 400;
-  if (window.innerWidth - listW > x) {
-    x = window.innerWidth - listW - 60;
-  }
-  ScrollX.value = x;
-}
 </script>
 
 <template>
-  <div class="relative rounded group" :id="id">
-    <h1 class="px-10 mb-5 text-2xl font-medium">{{ title ?? "Title" }}</h1>
-    <div
-      @click="handleLeft"
-      class="absolute h-[80%] top-16 flex items-center group-hover:opacity-100 hover:text-blue-400 opacity-0 left-0 cursor-pointer transition ease-in-out duration-300 overflow-hidden ml-3"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="w-8 h-8"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M15.75 19.5L8.25 12l7.5-7.5"
-        />
-      </svg>
-    </div>
-    <div
-      @click="handleRight"
-      class="absolute h-[80%] top-16 flex items-center right-0 cursor-pointer group-hover:opacity-100 hover:text-blue-400 opacity-0 transition ease-in-out duration-300 overflow-hidden"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="w-8 h-8"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M8.25 4.5l7.5 7.5-7.5 7.5"
-        />
-      </svg>
-    </div>
-    <div class="overflow-x-hidden">
+  <div class="relative rounded group">
+    <h1 :id="id" class="mt-5 mb-5 ml-3 text-3xl font-medium text-gray-200">{{ title ?? "Title" }}</h1>
+    <div class="overflow-x-scroll">
       <div
         class="transition duration-500 ease-in-out"
-        :style="{ marginLeft: ScrollX + 'px', width: projects.length * 400 + 'px' }"
+        :style="{width: projects.length * 400 + 'px' }"
         v-if="projects"
       >
         <Card
-          class="inline-block"
+          class="inline-block mb-3"
           v-for="(project, idx) in projects"
           :key="idx"
           :image="project.image"

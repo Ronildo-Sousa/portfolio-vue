@@ -1,12 +1,12 @@
 <script setup>
 import { ref } from "vue";
 import MenuItem from "./MenuItem.vue";
-let open = ref(true);
-let activePage = ref("Projetos");
+let open = ref(false);
+let activePage = ref("Home");
 </script>
 
 <template>
-  <nav class="">
+  <nav class="fixed top-0 left-0 right-0 z-10 border-b border-indigo-900 bg-gradient-to-r from-black to-gray-600">
     <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
