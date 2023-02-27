@@ -19,7 +19,7 @@ export default {
     <div
       class="overflow-hidden bg-gray-900 rounded-lg cursor-pointer bg-gradient-to-b from-gray-700 to-gray-900 hover:from-gray-900 hover:to-gray-700"
     >
-      <div class="h-[200px]">
+      <div class="h-[220px]">
           <img
             class="w-full h-full rounded"
             :src="image ?? 'https://picsum.photos/seed/picsum/400/300'"

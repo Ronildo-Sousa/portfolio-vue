@@ -1,8 +1,23 @@
 <script setup>
+import { onMounted } from "vue";
+import axios from "axios";
 import List from "./components/List.vue";
 import Header from "./components/Header.vue";
 import Hero from "./components/Hero.vue";
 
+onMounted(() => {
+  // const request = axios
+  //   .create({
+  //     headers: {
+  //       Accept: "application/vnd.github+json",
+  //       Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
+  //     },
+  //   })
+  //   .get("https://api.github.com/users/Ronildo-Sousa/repos")
+  //   .then((response) => {
+  //     console.log(response);
+  //   });
+});
 const projects = [
   {
     title: "Short Url",
