@@ -1,6 +1,8 @@
 <script setup>
 import List from "./components/List.vue";
 import Header from "./components/Header.vue";
+import Hero from './components/Hero.vue'
+
 const projects = [
   {
     title: "Short Url",
@@ -59,11 +61,34 @@ const projects = [
     link: "https://github.com/Ronildo-Sousa/short-url",
   },
 ];
+
+const personalInformation = {
+  name: 'Ronildo Sousa',
+  title: 'Full Stack PHP/Laravel',
+  description: "Desenvolvedor iniciante Full Stack com forte paixão por tecnologia e habilidades comprovadas em desenvolvimento de software. Com aproximadamente 2 anos de experiência em projetos pessoais em Laravel, tenho conhecimento sólido em PHP, HTML, CSS, JavaScript e em outras ferramentas como Git e MySQL. Sou familiarizado com aplicações web, tanto frontend quanto backend. Busco constantemente aprender e aprimorar minhas habilidades, e estou animado para dar meus primeiros passos como desenvolvedor profissional. Acredito que posso trazer entusiasmo, dedicação e soluções criativas para equipes de desenvolvimento e contribuir para o sucesso dos projetos.",
+  image: 'https://avatars.githubusercontent.com/u/60019987?v=4',
+  social_links: [
+    {text: 'Github', url: 'https://github.com/Ronildo-Sousa'},
+    {text: 'LinkedIn', url: 'https://linkedin.com/in/ronildosousa'},
+  ]
+}
+  
+
 </script>
 
 <template>
-  <div class="text-white bg-gradient-to-r from-black to-gray-600">
-    <Header />
-    <List :projects="projects" title="Meus projetos" id="#projetos" />
+  <div class="px-8 text-white bg-gradient-to-r from-black to-gray-600">
+    <div class="max-w-6xl py-3 mx-auto">
+      <Header />
+      <Hero 
+        :id="'#home'"
+        :name="personalInformation.name"
+        :title="personalInformation.title"
+        :description="personalInformation.description"
+        :image="personalInformation.image"
+        :social_links="personalInformation.social_links"
+       />
+      <List :projects="projects" title="Meus projetos" :id="'#projetos'" />
+    </div>
   </div>
 </template>
