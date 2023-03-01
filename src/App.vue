@@ -1,23 +1,9 @@
 <script setup>
-import { onMounted } from "vue";
-import axios from "axios";
 import List from "./components/List.vue";
 import Header from "./components/Header.vue";
 import Hero from "./components/Hero.vue";
+import Skills from "./components/Skills.vue";
 
-onMounted(() => {
-  // const request = axios
-  //   .create({
-  //     headers: {
-  //       Accept: "application/vnd.github+json",
-  //       Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
-  //     },
-  //   })
-  //   .get("https://api.github.com/users/Ronildo-Sousa/repos")
-  //   .then((response) => {
-  //     console.log(response);
-  //   });
-});
 const projects = [
   {
     title: "Short Url",
@@ -88,11 +74,44 @@ const personalInformation = {
     { text: "LinkedIn", url: "https://linkedin.com/in/ronildosousa" },
   ],
 };
+
+const skills = [
+  {
+    name: "PHP",
+    defaultImage:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+  },
+  {
+    name: "Laravel",
+    defaultImage:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg",
+  },
+  {
+    name: "VueJS",
+    defaultImage:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+  },
+  {
+    name: "Javascript",
+    defaultImage:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  },
+  {
+    name: "Tailwind",
+    defaultImage:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+  },
+  {
+    name: "Git",
+    defaultImage:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg",
+  },
+];
 </script>
 
 <template>
   <div class="px-8 text-white bg-gradient-to-r from-black to-gray-600">
-    <div class="max-w-6xl py-3 mx-auto">
+    <div class="max-w-6xl py-3 flex flex-col gap-10 mx-auto">
       <Header />
       <Hero
         :id="'home'"
@@ -103,6 +122,7 @@ const personalInformation = {
         :social_links="personalInformation.social_links"
       />
       <List :id="'projetos'" :projects="projects" title="Meus projetos" />
+      <Skills :id="'habilidades'" title="Minhas Habilidades" :skills="skills" />
     </div>
   </div>
 </template>
