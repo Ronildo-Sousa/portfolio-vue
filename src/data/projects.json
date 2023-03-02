@@ -7,24 +7,24 @@
       "link": "https://github.com/Ronildo-Sousa/short-url"
     },
     {
-      "title": "Short Url",
+      "title": "Crypto Api",
       "description":
-        "É um simples encurtador de urls desenvolvido utilizando- se testes automatizados,Livewire e Tailwind, nesta aplicação o usuário pode criar e gerenciar uma url curta, podendo observar o desempenho de visualizações diárias, semanais, etc...",
-      "image": "https://picsum.photos/seed/picsum/400/300",
-      "link": "https://github.com/Ronildo-Sousa/short-url"
+        "Esta é uma Api que faz uso de um serviço externo e disponibiliza 2 endpoints principais. Um endpoint para obter o preço mais recente de uma criptomoeda, e outro para retornar o preço de uma criptomoeda baseado em uma data fornecida.",
+      "image": "https://github.com/Ronildo-Sousa/crypto_api/raw/main/public/readme.gif",
+      "link": "https://github.com/Ronildo-Sousa/crypto_api"
     },
     {
-      "title": "Short Url",
+      "title": "Linktree Clone",
       "description":
-        "É um simples encurtador de urls desenvolvido utilizando- se testes automatizados,Livewire e Tailwind, nesta aplicação o usuário pode criar e gerenciar uma url curta, podendo observar o desempenho de visualizações diárias, semanais, etc...",
-      "image": "https://picsum.photos/seed/picsum/400/300",
-      "link": "https://github.com/Ronildo-Sousa/short-url"
+        "'Clone' de algumas funcionalidades da plataforma Linktree, desenvolvido para praticar conceitos de frontend e backend, utilizando Laravel e Vue",
+      "image": "https://github.com/Ronildo-Sousa/linktree-clone/raw/main/resources/readme/linktree-clone.gif",
+      "link": "https://github.com/Ronildo-Sousa/linktree-clone"
     },
     {
-      "title": "Short Url",
+      "title": "Fin4nces",
       "description":
-        "É um simples encurtador de urls desenvolvido utilizando- se testes automatizados,Livewire e Tailwind, nesta aplicação o usuário pode criar e gerenciar uma url curta, podendo observar o desempenho de visualizações diárias, semanais, etc...",
-      "image": "https://picsum.photos/seed/picsum/400/300",
-      "link": "https://github.com/Ronildo-Sousa/short-url"
+        "Uma aplicação de controle financeiro que permite ao usuário acompanhar suas finanças, cadastrando as entradas e saídas ocorridas durante o mês.",
+      "image": "https://github.com/Ronildo-Sousa/fin4nces/raw/main/public/readme.gif",
+      "link": "https://github.com/Ronildo-Sousa/fin4nces"
     }
   ]
