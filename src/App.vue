@@ -3,6 +3,7 @@ import List from "./components/List.vue";
 import Header from "./components/Header.vue";
 import Hero from "./components/Hero.vue";
 import Skills from "./components/Skills.vue";
+import Footer from "./components/Footer.vue";
 
 const projects = [
   {
@@ -66,6 +67,7 @@ const projects = [
 const personalInformation = {
   name: "Ronildo Sousa",
   title: "Full Stack PHP/Laravel",
+  email: "sousaronildo400@gmail.com",
   description:
     "Desenvolvedor iniciante Full Stack com forte paixão por tecnologia e habilidades comprovadas em desenvolvimento de software. Com aproximadamente 2 anos de experiência em projetos pessoais em Laravel, tenho conhecimento sólido em PHP, HTML, CSS, JavaScript e em outras ferramentas como Git e MySQL. Sou familiarizado com aplicações web, tanto frontend quanto backend. Busco constantemente aprender e aprimorar minhas habilidades, e estou animado para dar meus primeiros passos como desenvolvedor profissional. Acredito que posso trazer entusiasmo, dedicação e soluções criativas para equipes de desenvolvimento e contribuir para o sucesso dos projetos.",
   image: "https://avatars.githubusercontent.com/u/60019987?v=4",
@@ -111,7 +113,7 @@ const skills = [
 
 <template>
   <div class="px-8 text-white bg-gradient-to-r from-black to-gray-600">
-    <div class="max-w-6xl py-3 flex flex-col gap-10 mx-auto">
+    <div class="max-w-6xl py-10 flex flex-col gap-10 mx-auto">
       <Header />
       <Hero
         :id="'home'"
@@ -125,4 +127,9 @@ const skills = [
       <Skills :id="'habilidades'" title="Minhas Habilidades" :skills="skills" />
     </div>
   </div>
+  <Footer
+    :email="personalInformation.email"
+    :linkedin="personalInformation.social_links[1].url"
+    :github="personalInformation.social_links[0].url"
+  />
 </template>
