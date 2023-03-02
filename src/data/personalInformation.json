@@ -1,0 +1,17 @@
+{
+    "name": "Ronildo Sousa",
+    "title": "Full Stack PHP/Laravel",
+    "email": "sousaronildo400@gmail.com",
+    "description": "Desenvolvedor iniciante Full Stack com forte paixão por tecnologia e habilidades comprovadas em desenvolvimento de software. Com aproximadamente 2 anos de experiência em projetos pessoais em Laravel, tenho conhecimento sólido em PHP, HTML, CSS, JavaScript e em outras ferramentas como Git e MySQL. Sou familiarizado com aplicações web, tanto frontend quanto backend. Busco constantemente aprender e aprimorar minhas habilidades, e estou animado para dar meus primeiros passos como desenvolvedor profissional. Acredito que posso trazer entusiasmo, dedicação e soluções criativas para equipes de desenvolvimento e contribuir para o sucesso dos projetos.",
+    "image": "https://avatars.githubusercontent.com/u/60019987?v=4",
+    "social_links": [
+        {
+            "text": "Github",
+            "url": "https://github.com/Ronildo-Sousa"
+        },
+        {
+            "text": "LinkedIn",
+            "url": "https://linkedin.com/in/ronildosousa"
+        }
+    ]
+}
