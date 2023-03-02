@@ -1,17 +1,12 @@
-<script>
+<script setup>
 import MyButton from "./MyButton.vue";
-export default {
-  props: {
-    image: String,
-    title: String,
-    description: String,
-    link: String,
-    link_text: String,
-  },
-  components: {
-    MyButton,
-  },
-};
+const props = defineProps({
+  image: String,
+  title: String,
+  description: String,
+  link: String,
+  link_text: String,
+});
 </script>
 
 <template>
@@ -20,11 +15,11 @@ export default {
       class="overflow-hidden bg-gray-900 rounded-lg cursor-pointer bg-gradient-to-b from-gray-700 to-gray-900 hover:from-gray-900 hover:to-gray-700"
     >
       <div class="h-[220px]">
-          <img
-            class="w-full h-full rounded"
-            :src="image ?? 'https://picsum.photos/seed/picsum/400/300'"
-            alt="card-item"
-          />
+        <img
+          class="object-fill w-full h-full rounded"
+          :src="image ?? 'https://picsum.photos/seed/picsum/400/300'"
+          alt="card-item"
+        />
       </div>
       <div class="flex flex-col items-center p-6">
         <h1 class="mb-3 text-xl font-medium">{{ title }}</h1>
