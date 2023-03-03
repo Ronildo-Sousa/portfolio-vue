@@ -58,12 +58,12 @@ let activePage = ref("Home");
         <div
           class="flex items-center justify-center flex-1 sm:items-stretch sm:justify-between"
         >
-          <div class="flex items-center flex-shrink-0">
+          <div class="flex w-[60px] items-center flex-shrink-0">
             <a href="/">
-              <img class="block w-auto h-8" src="../assets/logo.svg" alt="Your Company" />
+              <img  src="../assets/logo.png" alt="Your Company" />
             </a>
           </div>
-          <div class="hidden sm:ml-6 sm:block">
+          <div class="items-center hidden sm:ml-6 sm:flex">
             <div class="flex space-x-4">
               <MenuItem
                 @click="activePage = 'Home'"

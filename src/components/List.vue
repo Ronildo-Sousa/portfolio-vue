@@ -13,12 +13,12 @@ const props = defineProps({
     <h1 :id="id" class="mb-5 ml-3 text-3xl font-medium text-gray-200">{{ title ?? "Title" }}</h1>
     <div class="overflow-x-scroll cursor-pointer scrollbar-thin scrollbar-thumb-blue-700 hover:scrollbar-thumb-blue-500 scrollbar-thumb-rounded-full">
       <div
-        class="flex"
+        class="flex gap-8"
         :style="{width: projects.length * 400 + 'px' }"
         v-if="projects"
       >
         <Card
-          class="mx-3 mb-5"
+        class="mb-5"
           v-for="(project, idx) in projects"
           :key="idx"
           :image="project.image"
