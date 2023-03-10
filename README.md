@@ -1,28 +1,22 @@
-# portfolio-vue
+# Portfólio
 
-This template should help get you started developing with Vue 3 in Vite.
+<p style="text-align: center;">⚠️ (Em construção)</p>
 
-## Recommended IDE Setup
+Um simples site pessoal desenvolvido por mim utilizando VueJs e TailwindCSS. Disponível em: https://ronildosousa.netlify.app
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## Configurando o projeto
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Rodando o servidor de desenvolvimento
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Gerando build de produção
 
 ```sh
 npm run build
