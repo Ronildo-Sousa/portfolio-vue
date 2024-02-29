@@ -1,32 +1,26 @@
 [
-    {
-      "name": "PHP",
-      "defaultImage":
-        "src/assets/php-logo.svg"
-    },
-    {
-      "name": "Laravel",
-      "defaultImage":
-        "src/assets/Laravel-logo.png"
-    },
-    {
-      "name": "VueJS",
-      "defaultImage":
-        "src/assets/vue-logo.svg"
-    },
-    {
-      "name": "Javascript",
-      "defaultImage":
-        "src/assets/javascript-logo.svg"
-    },
-    {
-      "name": "Tailwind",
-      "defaultImage":
-        "src/assets/tailwindcss-logo.svg"
-    },
-    {
-      "name": "Git",
-      "defaultImage":
-        "src/assets/git-logo.svg"
-    }
-  ]
+  {
+    "name": "PHP",
+    "defaultImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+  },
+  {
+    "name": "Laravel",
+    "defaultImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+  },
+  {
+    "name": "VueJS",
+    "defaultImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+  },
+  {
+    "name": "Javascript",
+    "defaultImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+  },
+  {
+    "name": "Tailwind",
+    "defaultImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+  },
+  {
+    "name": "Git",
+    "defaultImage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg"
+  }
+]
