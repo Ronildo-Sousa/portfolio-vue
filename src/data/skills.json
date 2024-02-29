@@ -2,31 +2,31 @@
     {
       "name": "PHP",
       "defaultImage":
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+        "/src/assets/php-logo.webp"
     },
     {
       "name": "Laravel",
       "defaultImage":
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg"
+        "/src/assets/Laravel-logo.webp"
     },
     {
       "name": "VueJS",
       "defaultImage":
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+        "/src/assets/vue-logo.webp"
     },
     {
       "name": "Javascript",
       "defaultImage":
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+        "/src/assets/javascript-logo.webp"
     },
     {
       "name": "Tailwind",
       "defaultImage":
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+        "/src/assets/tailwindcss-logo.webp"
     },
     {
       "name": "Git",
       "defaultImage":
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg"
+        "/src/assets/git-logo.webp"
     }
   ]
